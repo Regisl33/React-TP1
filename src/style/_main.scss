@@ -1,0 +1,73 @@
+main{
+
+  h1{
+    margin: 25px auto 20px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    text-shadow: 2px 1px 6px $color5;
+  }
+  input{
+    background: none;
+    color: $color2;
+    border: 2px solid $color3;
+    width: 25%;
+    max-width: 350px;
+    min-width: 150px;
+    padding: 10px 15px;
+    border-radius: 100px;
+    font-size: 1rem;
+    text-align: center;
+    letter-spacing: 1px;
+
+    &::placeholder{
+      color: $color2;
+    }
+    &:focus{
+      border: 2px solid $color4;
+    }
+  }
+  .meals{
+    margin: 20px 10px;
+    display: flex;
+    flex-wrap: wrap;
+  
+    .card{
+      border: 1px solid $color2;
+      border-radius: 25px;
+      flex: 1 1 20%;
+      margin: 1%;
+      padding: 25px;
+      flex-direction: column;
+      gap: 25px;
+      @include justify(space-evenly);
+      box-shadow: 1px 2px 8px 1px rgba(245, 245, 245, 0.488);
+
+      h2{
+        letter-spacing: 2px;
+        font-weight: bold;
+        text-shadow: 2px 1px 6px $color5;
+      }
+      h3{
+        letter-spacing: 2px;
+        text-shadow: 2px 1px 6px $color5;
+      }
+      img{
+        width: 250px;
+        height: 250px;
+        object-fit: cover;
+        border-radius: 20px;
+        box-shadow: 1px 2px 8px 1px rgba(245, 245, 245, 0.488);
+      }
+      p{
+        display: -webkit-box; 
+        -webkit-box-orient: vertical; 
+        -webkit-line-clamp: 10; 
+        overflow: hidden;
+        font-size: 1.1rem;
+        letter-spacing: 1px;
+        line-height: 22px;
+        text-shadow: 2px 1px 6px $color5;
+      }
+    }
+  }
+}

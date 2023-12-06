@@ -1,0 +1,29 @@
+@font-face {
+  font-family: "font1";
+  src: url(../assets/fonts/Roboto-Regular.ttf);
+}
+$font1: "font1", sans-serif;
+$color1: rgb(39, 39, 39);
+$color2:rgb(245, 245, 245);
+$color3:rgb(8, 61, 154);
+$color4:rgb(25, 97, 222);
+$color5:rgba(245, 245, 245, 0.789);
+
+@mixin justify($content){
+  display: flex;
+  justify-content: $content;
+  align-items: center;
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: $font1;
+  outline: none;
+}
+body{
+  text-align: center;
+  background: $color1;
+  color: $color2;
+}
